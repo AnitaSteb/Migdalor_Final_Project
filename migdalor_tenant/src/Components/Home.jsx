@@ -17,13 +17,12 @@ const MainMenu = () => {
     <div className="menu-container">
       <header className="menu-header">
         <img src={Logo} alt="Logo" className="menu-logo" />
-        <h2 className="welcom-header">שלום {user.firstName}</h2>
-        
+        <h2 className="welcom-header">שלום {user.firstName} {user.lastName}</h2>
       </header>
       <div className="menu-grid">
         <IconGrid />
       </div>
-      <div></div>
+      <div className="lower-div"></div>
     </div>
   );
 }

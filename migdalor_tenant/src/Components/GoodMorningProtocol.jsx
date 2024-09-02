@@ -5,7 +5,7 @@ import moment from 'moment';
 // Assuming you have a UserContext that provides userId
 import {UserContext} from '../Auth/Auth.jsx';
 import axios from "axios";
-import {styled} from "@mui/system";
+import {padding, styled} from "@mui/system";
 import theme from "../Theme/Theme.jsx";
 import BackButton from "./BackButton.jsx";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack.js";
@@ -17,9 +17,15 @@ const StyledBox = styled('Box')({
     justifyContent:'center',
     flexDirection: 'column',
     backgroundColor: theme.palette.primary.main,
-    width: '75%',
-    height: '75%',
-    borderRadius: 20
+    // width: '75%',
+    // height: '75%',
+    // borderRadius: 20
+    width: '60%',
+    height: '60%',
+    borderRadius: '20px',
+    padding: '30px',  // Added padding for better spacing
+    boxShadow: '0 8px 16px rgba(0, 0, 0, 0.1)',  // Added shadow for depth
+    textAlign: 'center'  // Center text alignment
 
 });
 
@@ -75,7 +81,9 @@ const CheckInPage = () => {
             display: 'flex',
             height: '100%',
             alignItems: 'center',
-            justifyContent: 'center'
+            justifyContent: 'center',
+            //backgroundColor: theme.palette.background.default, // Ensure background matches theme
+        padding: '20px'
         }}>
             <BackButton/>
             {loading ? (
@@ -84,26 +92,27 @@ const CheckInPage = () => {
                 <>
                     {isCheckedIn ? (
 
-                        <StyledBox>
-                            <Typography variant="h2" sx={{marginTop: -5}}> היי {user.firstName}, </Typography>
-                            <Typography variant="h2" sx={{marginTop: 5}}> נוהל בוקר טוב דווח בהצלחה</Typography>
-                            <Typography variant="h2" sx={{marginTop: 5}}>המשך יום טוב!</Typography>
+                        <StyledBox style={{ paddingTop:60}}>
+                            <Typography variant="h2" sx={{marginTop: -5}} style={{ fontFamily: '"Open Sans", sans-serif' }}> היי {user.firstName}, </Typography>
+                            <Typography variant="h2" sx={{marginTop: 5}} style={{ fontFamily: '"Open Sans", sans-serif' }}> נוהל בוקר טוב דווח בהצלחה</Typography>
+                            <Typography variant="h2" sx={{marginTop: 5}} style={{ fontFamily: '"Open Sans", sans-serif' }}>המשך יום טוב!</Typography>
                         </StyledBox>
                     ) : (
                         <StyledBox>
-                            <Typography variant="h2" sx={{marginTop: 5}}> בוקר טוב {user.firstName}, </Typography>
-                            <Typography variant="h2" sx={{marginTop: 5}}> אנא דווח על נוהל בוקר טוב </Typography>
+                            <Typography variant="h2" sx={{marginTop: 5}} style={{ fontFamily: '"Open Sans", sans-serif' }}> בוקר טוב {user.firstName}, </Typography>
+                            <Typography variant="h2" sx={{marginTop: 5}} style={{ fontFamily: '"Open Sans", sans-serif' }}> אנא דווח על נוהל בוקר טוב </Typography>
                             <IconButton
                                 onClick={handleCheckIn}
                                 sx={{
                                 margin: 'auto auto',
+                                marginTop: 25,
                                 width: 200,
                                 height: 200,
                                 backgroundColor: theme.palette.secondary.main,
                                 border: '3px solid white',
                             }}
                             >
-                                <Typography variant={'h3'} noWrap={true}>דיווח נוהל בוקר טוב</Typography>
+                                <Typography variant={'h3'} noWrap={true} style={{fontSize:'20px', fontFamily: '"Open Sans", sans-serif' }}>דיווח נוהל בוקר טוב</Typography>
                             </IconButton>
                         </StyledBox>
                     )}

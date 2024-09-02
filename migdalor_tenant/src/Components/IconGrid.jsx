@@ -40,28 +40,41 @@ const IconGrid = () => {
     }
   }
 
+  const handleMouseEnter = (e) => {
+    //e.currentTarget.style.backgroundColor = '#38588e'; // Set background color on hover
+    e.currentTarget.style.transform = 'scale(1.05)'; // Scale up
+  }
+
+  const handleMouseLeave = (e) => {
+    //e.currentTarget.style.backgroundColor = ''; // Reset background color
+    e.currentTarget.style.transform = 'scale(1)'; // Scale back to normal
+  }
+
   return (
     <div>
-      <Grid container spacing={2} justifyContent="center">
+      <Grid container spacing={3} justifyContent="center">
       {items.map((item, index) => (
         <Grid item xs={4} key={index}>
           <Paper 
-            elevation={3} 
+            elevation={6} 
             style={{ 
               display: 'flex', 
               flexDirection: 'column', 
               alignItems: 'center', 
               padding: 16,
               color: '#38588e',
-              cursor: item.route ? 'pointer' : 'default'
+              cursor: item.route ? 'pointer' : 'default',
+              transition: 'background-color 0.3s ease-in-out, transform 0.3s ease-in-out'
             }}
             onClick={() => handleItemClick(item.route)}
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}
           >
             {item.icon}
-            <Typography variant="h6" className="welcom-header" style={{ marginTop: 8, color: '#000', fontWeight: 'bold', fontSize: 22, fontFamily: 'Arial' }}>
+            <Typography variant="h6"  className="welcom-header" style={{ marginTop: 8, color: '#000', fontWeight: 'bold', fontSize: 22, fontFamily: '"Open Sans", sans-serif' }}>
               {item.text}
             </Typography>
-            <Typography variant="h6" style={{ color: '#000', fontWeight: 'bold', fontSize: 22 }}>
+            <Typography variant="h6"  className="welcom-header" style={{ color: '#000', fontWeight: 'bold', fontSize: 22 ,fontFamily: '"Open Sans", sans-serif'}}>
               {item.subtext}
             </Typography>
           </Paper>

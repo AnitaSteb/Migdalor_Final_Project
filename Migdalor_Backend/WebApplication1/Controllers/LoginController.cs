@@ -82,8 +82,9 @@ namespace WebApplication1.Controllers
                 TblResident resident = db.TblResidents.FirstOrDefault(u => u.Username == residentlogin.Username && u.Password == residentlogin.Password); ;
                 if (resident != null)
                 {
-                    var token = GenerateJwtTokenForResident(resident);
-                    return Ok(new { Token = token, resident = resident });
+                    //var token = GenerateJwtTokenForResident(resident);
+                    return Ok(new {resident = resident });
+                    //return Ok(new { Token = token, resident = resident });
                 }
                 return response;
             }catch (Exception ex)

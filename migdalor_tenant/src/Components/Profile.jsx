@@ -124,7 +124,7 @@ const Profile = () => {
         })
         setMessage("פרטייך נשמר בהצלחה")
         setOpenModal(true);
-        // כאן תוסיף את הקוד לשמירת הנתונים על השרת
+        
     };
 
     return (
