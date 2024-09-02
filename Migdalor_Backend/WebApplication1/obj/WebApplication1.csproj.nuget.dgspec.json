@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\anita\\Migdalor_Final_Project\\Migdalor_Backend\\WebApplication1\\WebApplication1.csproj": {}
+    "C:\\Users\\peerf\\Source\\Repos\\Migdalor_Final_Project\\Migdalor_Backend\\WebApplication1\\WebApplication1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\anita\\Migdalor_Final_Project\\Migdalor_Backend\\ClassLibrary1\\ClassLibrary1.csproj": {
+    "C:\\Users\\peerf\\Source\\Repos\\Migdalor_Final_Project\\Migdalor_Backend\\ClassLibrary1\\ClassLibrary1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\anita\\Migdalor_Final_Project\\Migdalor_Backend\\ClassLibrary1\\ClassLibrary1.csproj",
+        "projectUniqueName": "C:\\Users\\peerf\\Source\\Repos\\Migdalor_Final_Project\\Migdalor_Backend\\ClassLibrary1\\ClassLibrary1.csproj",
         "projectName": "ClassLibrary1",
-        "projectPath": "C:\\Users\\anita\\Migdalor_Final_Project\\Migdalor_Backend\\ClassLibrary1\\ClassLibrary1.csproj",
-        "packagesPath": "C:\\Users\\anita\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\anita\\Migdalor_Final_Project\\Migdalor_Backend\\ClassLibrary1\\obj\\",
+        "projectPath": "C:\\Users\\peerf\\Source\\Repos\\Migdalor_Final_Project\\Migdalor_Backend\\ClassLibrary1\\ClassLibrary1.csproj",
+        "packagesPath": "C:\\Users\\peerf\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\peerf\\Source\\Repos\\Migdalor_Final_Project\\Migdalor_Backend\\ClassLibrary1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\anita\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\peerf\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -40,6 +40,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "MailKit": {
+              "target": "Package",
+              "version": "[4.7.1.1, )"
+            },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
@@ -63,6 +67,10 @@
             "Microsoft.Extensions.Configuration.Json": {
               "target": "Package",
               "version": "[7.0.0, )"
+            },
+            "Mimekit": {
+              "target": "Package",
+              "version": "[4.7.1, )"
             }
           },
           "imports": [
@@ -80,21 +88,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\anita\\Migdalor_Final_Project\\Migdalor_Backend\\WebApplication1\\WebApplication1.csproj": {
+    "C:\\Users\\peerf\\Source\\Repos\\Migdalor_Final_Project\\Migdalor_Backend\\WebApplication1\\WebApplication1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\anita\\Migdalor_Final_Project\\Migdalor_Backend\\WebApplication1\\WebApplication1.csproj",
+        "projectUniqueName": "C:\\Users\\peerf\\Source\\Repos\\Migdalor_Final_Project\\Migdalor_Backend\\WebApplication1\\WebApplication1.csproj",
         "projectName": "WebApplication1",
-        "projectPath": "C:\\Users\\anita\\Migdalor_Final_Project\\Migdalor_Backend\\WebApplication1\\WebApplication1.csproj",
-        "packagesPath": "C:\\Users\\anita\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\anita\\Migdalor_Final_Project\\Migdalor_Backend\\WebApplication1\\obj\\",
+        "projectPath": "C:\\Users\\peerf\\Source\\Repos\\Migdalor_Final_Project\\Migdalor_Backend\\WebApplication1\\WebApplication1.csproj",
+        "packagesPath": "C:\\Users\\peerf\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\peerf\\Source\\Repos\\Migdalor_Final_Project\\Migdalor_Backend\\WebApplication1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\anita\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\peerf\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -108,8 +116,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\anita\\Migdalor_Final_Project\\Migdalor_Backend\\ClassLibrary1\\ClassLibrary1.csproj": {
-                "projectPath": "C:\\Users\\anita\\Migdalor_Final_Project\\Migdalor_Backend\\ClassLibrary1\\ClassLibrary1.csproj"
+              "C:\\Users\\peerf\\Source\\Repos\\Migdalor_Final_Project\\Migdalor_Backend\\ClassLibrary1\\ClassLibrary1.csproj": {
+                "projectPath": "C:\\Users\\peerf\\Source\\Repos\\Migdalor_Final_Project\\Migdalor_Backend\\ClassLibrary1\\ClassLibrary1.csproj"
               }
             }
           }
@@ -124,6 +132,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "MailKit": {
+              "target": "Package",
+              "version": "[4.7.1.1, )"
+            },
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
               "version": "[6.0.30, )"
@@ -139,6 +151,22 @@
             "Microsoft.IdentityModel.Tokens": {
               "target": "Package",
               "version": "[6.35.0, )"
+            },
+            "Mimekit": {
+              "target": "Package",
+              "version": "[4.7.1, )"
+            },
+            "Quartz": {
+              "target": "Package",
+              "version": "[3.13.0, )"
+            },
+            "Quartz.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[3.13.0, )"
+            },
+            "Quartz.Extensions.Hosting": {
+              "target": "Package",
+              "version": "[3.13.0, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
@@ -167,7 +195,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

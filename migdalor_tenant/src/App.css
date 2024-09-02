@@ -1,7 +1,8 @@
+html, body, #app, #app>div {
+  height: 100%
+}
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+  height: 100%;
   text-align: center;
 }
 
