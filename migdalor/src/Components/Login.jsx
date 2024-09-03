@@ -75,7 +75,7 @@ export default function Login(props) {
         
         <br/>
 
-        <Button type="submit" variant="contained" color="primary"><b>התחברות</b></Button>
+        <Button type="submit" variant="contained" color="primary" ><b>התחברות</b></Button>
         <br/>
         </Box>
     

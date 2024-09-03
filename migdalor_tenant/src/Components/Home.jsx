@@ -13,7 +13,7 @@ const MainMenu = () => {
     return (
         <div className="menu-container">
             <LogoutButton/>
-            <h2 className="welcom-header">שלום {user.firstName}</h2>
+            <h2 className="welcom-header">שלום {user.firstName} {user.lastName}</h2>
 
             <div className="menu-grid">
                 <IconGrid/>
