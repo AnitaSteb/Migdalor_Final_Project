@@ -1,0 +1,40 @@
+.container{
+display: flex;
+    flex-direction: column;
+  flex-wrap: wrap; /* מאפשר ל-divים לעבור לשורה הבאה אם אין מספיק מקום */
+  justify-content: space-between; /* מרווח שווה בין ה-divים */
+  gap: 20px; /* ריווח בין ה-divים */
+}
+
+.openingHours{
+    font-family: 'sans-serif';
+    font-weight: bold;
+    background-color: #F6F2E4;
+    padding: 10px; /* ריווח פנימי */
+    border-radius: 10px; /* פינות מעוגלות */
+    margin: 5px auto; /* מרכז את התיבה */
+}
+
+
+  h1{
+    color: #38588e;
+    text-shadow: 2px 2px 4px rgba(48, 48, 48, 0.5);
+    margin: 3px;
+  }
+
+  .clinic, .pool, .gym{
+      display: flex;
+      flex-direction: column;
+      width: 70vh;
+    color: white;
+    font-family: 'sans-serif';
+    background-color: #38588E;
+    padding: 10px; /* ריווח פנימי */
+    border: 1px solid #ddd; /* גבול */
+    border-radius: 10px; /* פינות מעוגלות */
+    margin: 5px auto; /* מרכז את התיבה */
+  }
+
+  h2{
+    margin: 3px;
+  }
