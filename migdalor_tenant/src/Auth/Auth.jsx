@@ -7,7 +7,7 @@ export const UserProvider = ({ children }) => {
     const [user, setUser] = useState(null);
     const login = async (username, password) => {
         try {
-            const response = await axios.post('https://localhost:7149/api/login/ResidentLogin', {
+            const response = await axios.post('https://proj.ruppin.ac.il/bgroup32/test2/tar2/api/login/ResidentLogin', {
                 username,
                 password,
             });

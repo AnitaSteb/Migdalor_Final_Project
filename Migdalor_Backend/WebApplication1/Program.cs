@@ -38,7 +38,7 @@ builder.Services.AddQuartz(q =>
     q.AddTrigger(opts => opts
         .ForJob("DailyReportJob")
         .WithIdentity("DailyReportJobTrigger")
-        .WithCronSchedule("0 18 18 ? * * *")); // Cron expression for 9:00 AM every day
+        .WithCronSchedule("0 0 10 ? * * *")); // Cron expression for 9:00 AM every day //ss mm hh
 });
 
 builder.Services.AddQuartzHostedService(q => q.WaitForJobsToComplete = true);

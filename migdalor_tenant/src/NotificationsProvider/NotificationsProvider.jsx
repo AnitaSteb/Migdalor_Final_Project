@@ -11,7 +11,7 @@ const  NotificationProvider = ({ children }) => {
     const handleClose = ()=> setIsVisible(false);
         useEffect(() => {
             // Initialize WebSocket connection
-            const socket = new WebSocket('wss://localhost:7149/ws');
+            const socket = new WebSocket('wss://proj.ruppin.ac.il/bgroup32/test2/tar2/ws');
 
             // Listen for messages
             socket.onmessage = (event) => {

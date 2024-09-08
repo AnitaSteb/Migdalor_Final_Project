@@ -6,7 +6,7 @@ import Button from "@mui/material/Button";
 import CloseIcon from "@mui/icons-material/Close.js";
 import Modal from "@mui/material/Modal";
 
-// const apiUrl = "https://localhost:7149/api/activity/";
+// const apiUrl = "https://proj.ruppin.ac.il/bgroup32/test2/tar2/api/activity/";
 
 const TenantCommittee = ({isEdit, committeeId, setModalOpen, onUpdate}) => {
 

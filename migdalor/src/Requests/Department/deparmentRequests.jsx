@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const BASE_URL = `https://localhost:7149/api/Department/`
+const BASE_URL = `https://proj.ruppin.ac.il/bgroup32/test2/tar2/api/Department/`
 export const getAllDepartments = async()=>{
     const {data} =  await axios.get(BASE_URL + 'GetAllDepartments/');
     return data;

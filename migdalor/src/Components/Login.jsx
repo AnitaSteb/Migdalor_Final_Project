@@ -10,7 +10,7 @@ import myImage from "/public/Image/logo.png";
 import backgroundImg from "/public/Image/backgroundImg.jpeg";
 import {UserContext} from "../Auth/Auth.jsx";
 
-const apiUrl = "https://localhost:7149/api/Login/";
+const apiUrl = "https://proj.ruppin.ac.il/bgroup32/test2/tar2/api/Login/";
 // const apiUrl = "https://proj.ruppin.ac.il/bgroup32/test2/tar1/api/Login/";
 
 

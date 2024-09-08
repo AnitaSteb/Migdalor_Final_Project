@@ -36,7 +36,7 @@ const CheckInPage = () => {
     useEffect(() => {
         const checkUserStatus = async () => {
             try {
-                const response = await axios.get(`https://localhost:7149/api/GMPolicy/CheckResidnent/${user.id}`);
+                const response = await axios.get(`https://proj.ruppin.ac.il/bgroup32/test2/tar2/api/GMPolicy/CheckResidnent/${user.id}`);
                 const data = await response.data;
                 setIsCheckedIn(data);
             } catch (error) {
@@ -53,7 +53,7 @@ const CheckInPage = () => {
     const handleCheckIn = async () => {
         setLoading(true);
         try {
-            const response = await axios.post('https://localhost:7149/api/GMPolicy/', {
+            const response = await axios.post('https://proj.ruppin.ac.il/bgroup32/test2/tar2/api/GMPolicy/', {
                 date: new moment().format('YYYY-MM-DDT00:00:00'),
                 residentNumber: user.id
             })

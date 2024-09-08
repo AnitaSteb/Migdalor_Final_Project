@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const BASE_URL = 'https://localhost:7149/'
+const BASE_URL = 'https://proj.ruppin.ac.il/bgroup32/test2/tar2/'
 export const GetAllActivities = async () => {
 
     const {data} = await axios.get(BASE_URL + 'api/Activity/GetAllActivities')

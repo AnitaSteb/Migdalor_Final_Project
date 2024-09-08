@@ -3,7 +3,7 @@ import axios from 'axios';
 import {useNavigate} from "react-router-dom";
 
 export const UserContext = createContext();
-const apiUrl = "https://localhost:7149/api/Login/";
+const apiUrl = "https://proj.ruppin.ac.il/bgroup32/test2/tar2/api/Login/";
 
 export const UserProvider = ({ children }) => {
     const [activeUser, setUser] = useState(null);
